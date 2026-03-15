@@ -2,14 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,100:008f11&height=120&section=header&animation=fadeIn" width="100%"/>
 
-```
-██████╗ ██████╗ ██╗███████╗████████╗██╗    ██╗ █████╗ ████████╗ ██████╗██╗  ██╗
-██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝██║    ██║██╔══██╗╚══██╔══╝██╔════╝██║  ██║
-██║  ██║██████╔╝██║█████╗     ██║   ██║ █╗ ██║███████║   ██║   ██║     ███████║
-██║  ██║██╔══██╗██║██╔══╝     ██║   ██║███╗██║██╔══██║   ██║   ██║     ██╔══██║
-██████╔╝██║  ██║██║██║        ██║   ╚███╔███╔╝██║  ██║   ██║   ╚██████╗██║  ██║
-╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝    ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
-```
 
 ### `v0.1.0` — Real-Time Training/Serving Skew Detector for ML Pipelines
 
@@ -286,9 +278,9 @@ $env:PYTHONPATH="."; python -m uvicorn driftwatch.api.main:app --reload --port 8
 
 ```bash
 # Exit codes
-# 0 → STABLE   → pipeline passes ✅
-# 1 → CRITICAL → pipeline blocked 🚫
-# 2 → WARNING  → pipeline passes with log ⚠️
+# 0 → STABLE   → pipeline passes 
+# 1 → CRITICAL → pipeline blocked 
+# 2 → WARNING  → pipeline passes with log 
 ```
 
 ```yaml
@@ -366,22 +358,6 @@ driftwatch/
 
 ---
 
-## 📊 vs Alternatives
-
-```
-┌─────────────────────┬────────────┬────────────┬────────────┬────────────┐
-│                     │ DriftWatch │ Vertex AI  │   Arize    │ Evidently  │
-├─────────────────────┼────────────┼────────────┼────────────┼────────────┤
-│ Free                │     ✅     │  ❌ $400/mo │  ❌ $500/mo│  ✅ partial│
-│ 5 min setup         │     ✅     │  ❌ weeks   │  ❌ days   │  ❌ hours  │
-│ Works offline       │     ✅     │  ❌ GCP only│  ❌ cloud  │     ✅     │
-│ LLM explanations    │     ✅     │     ❌      │     ❌     │     ❌     │
-│ CI/CD exit codes    │     ✅     │     ❌      │     ❌     │  ✅ partial│
-│ Plain English action│     ✅     │     ❌      │     ❌     │     ❌     │
-│ Cloud agnostic      │     ✅     │  ❌ GCP only│     ✅     │     ✅     │
-└─────────────────────┴────────────┴────────────┴────────────┴────────────┘
-```
-
 <br/>
 
 ---
@@ -423,7 +399,7 @@ v1.0.0  🔄  Hosted SaaS — zero setup, team dashboards, email alerts
 
 <br/>
 
-[![Star on GitHub](https://img.shields.io/github/stars/YourUsername/driftwatch?style=for-the-badge&logo=github&color=00ff41)](https://github.com/YourUsername/driftwatch)
+[![Star on GitHub](https://img.shields.io/github/stars/YourUsername/driftwatch?style=for-the-badge&logo=github&color=00ff41)](https://github.com/Tripathi-Nishant/driftwatch)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:008f11,100:00ff41&height=120&section=footer&animation=fadeIn" width="100%"/>
 
