@@ -1,0 +1,20 @@
+# Core statistical engine
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+scikit-learn>=1.4.0
+
+# API
+fastapi>=0.111.0
+uvicorn>=0.30.0
+pydantic>=2.7.0
+python-multipart>=0.0.9
+
+# LLM explanation layer (optional — tool still works without it)
+anthropic>=0.28.0
+
+# Serialisation
+joblib>=1.4.0
+
+# Dev / testing
+httpx>=0.27.0
