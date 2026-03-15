@@ -38,7 +38,7 @@ pip install -r requirements.txt && python notebooks/demo.py
 
 ```
                     ┌─────────────────────────────────────────────┐
-                    │           YOUR ML MODEL IN PRODUCTION        │
+                    │           YOUR ML MODEL IN PRODUCTION       │
                     └─────────────────────────────────────────────┘
                                           │
               ┌───────────────────────────┼───────────────────────────┐
@@ -55,9 +55,9 @@ pip install -r requirements.txt && python notebooks/demo.py
                                           │
                                           ▼
                             ┌─────────────────────────┐
-                            │  Model runs. No errors.  │
-                            │  Accuracy: 94% → 61%     │
-                            │  Nobody noticed.         │
+                            │  Model runs. No errors. │
+                            │  Accuracy: 94% → 61%    │
+                            │  Nobody noticed.        │
                             └─────────────────────────┘
 ```
 
@@ -75,15 +75,15 @@ pip install -r requirements.txt && python notebooks/demo.py
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
 │  train.csv ──┐                                                       │
-│              ├──► Statistical Engine ──► Drift Report ──► Alert     │
-│ serving.csv ─┘         │                      │              │      │
+│              ├──► Statistical Engine ──► Drift Report ──► Alert      │
+│ serving.csv ─┘         │                      │              │       │
 │                         │                      │              │      │
-│              ┌──────────┘           ┌──────────┘      ┌──────┘      │
-│              ▼                      ▼                  ▼            │
-│         PSI · KL · JS          Schema Diff         LLM Explains     │
-│         KS · Chi²              Type Changes        DIAGNOSIS        │
-│         Per Feature            Null Explosions     IMPACT           │
-│         Severity Score         Missing Columns     ACTION           │
+│              ┌──────────┘           ┌──────────┘      ┌──────┘       │
+│              ▼                      ▼                  ▼             │
+│         PSI · KL · JS          Schema Diff         LLM Explains      │
+│         KS · Chi²              Type Changes        DIAGNOSIS         │
+│         Per Feature            Null Explosions     IMPACT            │
+│         Severity Score         Missing Columns     ACTION            │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -227,20 +227,20 @@ for entry in watcher.history:
 │ NUMERICAL                                                                │
 ├──────────────────┼───────────────────────────────────────────────────────┤
 │ PSI              │ Industry standard. < 0.1 stable · > 0.2 critical      │
-│ KL Divergence    │ Information loss reference → current                   │
-│ JS Distance      │ Symmetric, bounded [0,1]. Best for dashboards          │
-│ KS Test          │ Non-parametric. p < 0.05 = distributions differ        │
+│ KL Divergence    │ Information loss reference → current                  │
+│ JS Distance      │ Symmetric, bounded [0,1]. Best for dashboards         │
+│ KS Test          │ Non-parametric. p < 0.05 = distributions differ       │
 ├──────────────────┼───────────────────────────────────────────────────────┤
-│ CATEGORICAL                                                               │
+│ CATEGORICAL                                                              │
 ├──────────────────┼───────────────────────────────────────────────────────┤
-│ Chi-squared      │ Detects frequency distribution shifts                  │
+│ Chi-squared      │ Detects frequency distribution shifts                 │
 ├──────────────────┼───────────────────────────────────────────────────────┤
-│ SCHEMA (first)                                                            │
+│ SCHEMA (first)                                                           │
 ├──────────────────┼───────────────────────────────────────────────────────┤
-│ Missing columns  │ Feature in train, gone in serving                      │
-│ Type changes     │ int64 → object, float → string                         │
-│ Null explosion   │ Null rate increased > 20%                              │
-│ Unseen categories│ New values in serving not seen in training             │
+│ Missing columns  │ Feature in train, gone in serving                     │
+│ Type changes     │ int64 → object, float → string                        │
+│ Null explosion   │ Null rate increased > 20%                             │
+│ Unseen categories│ New values in serving not seen in training            │
 └──────────────────┴───────────────────────────────────────────────────────┘
 ```
 
