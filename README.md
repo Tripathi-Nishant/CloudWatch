@@ -392,15 +392,11 @@ v1.0.0  🔄  Hosted SaaS — zero setup, team dashboards, email alerts
 
 <div align="center">
 
-**Built with obsession over a 48-hour sprint.**
+**Built with obsession**
 
 *Because every ML team deserves production monitoring —*
 *not just the ones who can afford $400/month.*
 
 <br/>
-
-[![Star on GitHub](https://img.shields.io/github/stars/YourUsername/driftwatch?style=for-the-badge&logo=github&color=00ff41)](https://github.com/Tripathi-Nishant/driftwatch)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:008f11,100:00ff41&height=120&section=footer&animation=fadeIn" width="100%"/>
 
 </div>
