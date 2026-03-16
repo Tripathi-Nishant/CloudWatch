@@ -76,8 +76,8 @@ pip install -r requirements.txt && python notebooks/demo.py
 │                                                                      │
 │  train.csv ──┐                                                       │
 │              ├──► Statistical Engine ──► Drift Report ──► Alert      │
-│ serving.csv ─┘         │                      │              │       │
-│                         │                      │              │      │
+│ serving.csv ─┘          │                      │             │       │
+│                         │                      │             │       │
 │              ┌──────────┘           ┌──────────┘      ┌──────┘       │
 │              ▼                      ▼                  ▼             │
 │         PSI · KL · JS          Schema Diff         LLM Explains      │
